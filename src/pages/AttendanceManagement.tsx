@@ -40,8 +40,8 @@ const AttendanceManagement: React.FC = () => {
 
   return (
     <Container maxWidth="lg" sx={{ mt: 4 }}>
-      <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
-        Attendance Records
+      <Typography textAlign="center" variant="h4" component="h1" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
+        Attendance Management
       </Typography>
       <br />
       {error && <Typography color="error">{error}</Typography>}

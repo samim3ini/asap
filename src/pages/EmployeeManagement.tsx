@@ -110,7 +110,7 @@ const EmployeeManagement: React.FC = () => {
     return (
         <Container maxWidth="lg">
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', my: 4 }}>
-                <Typography variant="h4" component="h1" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
+                <Typography textAlign="center" variant="h4" component="h1" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
                     Employee Management
                 </Typography>
                 <Button
