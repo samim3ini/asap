@@ -8,8 +8,7 @@ import {
   CircularProgress,
   Container,
   Stack,
-  TextField,
-  Button
+  TextField
 } from '@mui/material';
 import {
   PieChart,
@@ -208,7 +207,7 @@ const AttendanceAnalytics: React.FC = () => {
                   outerRadius={80}
                   label
                 >
-                  {pieData.map((entry, index) => (
+                  {pieData.map((_, index) => (
                     <Cell
                       key={`cell-${index}`}
                       fill={pieColors[index % pieColors.length]}
