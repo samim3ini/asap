@@ -28,6 +28,12 @@ export const fetchAttendanceRecords = async () => {
     return axios.get(API_ATTEN_URL);
 };
 
+export const updateAttendanceStatus = async (employeeID: string, updatedStatus: string) => {
+  return axios.put(`${API_ATTEN_URL}/${employeeID}`, { empStatus: updatedStatus }, {
+    headers: { 'Content-Type': 'application/json' },
+  });
+};
+
 export const fetchAttendanceAnalytics = async (date?: string) => {
   const query = date ? `?date=${date}` : '';
   return axios.get(`${API_ANYL_URL}${query}`);
